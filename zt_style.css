@@ -1,0 +1,26 @@
+/* Create:2012-12-04 专题基础样式  */
+/* = Public Styles */
+body,div,dl,dt,dd,ul,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,figure,menu{margin:0;padding:0;}
+body,button,input,select,textarea{font:12px/22px Tahoma,Arial,"\5b8b\4f53",Verdana,Geneva,sans-serif}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+table{border-collapse:collapse;border-spacing:0}
+ol,ul{list-style:none}
+img{border:none;vertical-align:top}
+a{text-decoration:none}
+a:hover{text-decoration:underline}
+/* 清除浮动 */
+.clearfix:after,.wrap:after{clear:both;content:' ';display:block;font-size:0;line-height:0;visibility:hidden;width:0;height:0}
+.clearfix,.wrap{*zoom:1}/* for IE6 IE7 */
+.wrap{ margin-left:auto; margin-right:auto; width:980px;}
+/* 底部样式 */
+.ztfooter{ text-align:center; padding-bottom:10px;width:980px; margin:20px auto 0; overflow:hidden}
+/* = ZT Custom Styles */
+a{color:#0077cc;}
+a:hover{ color:#cc0066;}
+body{background:url(../img/bg.jpg) no-repeat center 50px;}
+.banner{background:url(http://pic.lvmama.com/img/new_v/ui_scrollLoading/loadingGIF46px.gif) center center no-repeat; display:block; text-align:center;}
+.banner {overflow:hidden}
+/* content */
+
+.wrap{width:990px;}
+.zt_box1,.zt_box2,.zt_box3,.zt_box4,.zt_box5{}
