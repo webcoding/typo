@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>TYPO.CSS - 中文网页重设与排版</title>
+<meta name="description" content="TYPO.CSS 的目的是，在一致化浏览器排版效果的同时，构建最适合中文阅读的网页排版。"/>
+<link rel="stylesheet" href="./noreset.css" />
+<style>
+
+</style>
+</head>
+<body>
+<div id="wrapper" class="wrap">
+
+<h1>中文网页重设与排版：TYPO.CSS</h1>
+<p class="lead">一致化浏览器排版效果，构建最适合中文阅读的网页排版</p>
+<p>目前这是一个测试项目</p>
+<p>详细介绍请参见：<a href="../cndocs/base-css.php">排版</a></p>
+<h2>常用标签</h2>
+<h1>h1. 一级标题 <small>默认30px</small></h1>
+<h2>h2. 二级标题 <small>默认24px</small></h2>
+<h3>h3. 三级标题 <small>默认16px</small></h3>
+<h4>h4. 四级标题 <small>默认14px</small></h4>
+<h5>h5. 五级标题 <small>默认12px</small></h5>
+<h6>h6. 六级标题 <small>默认12px</small></h6>
+
+<p>Body 默认字体大小14px，行高20px。这适用于 <code>&lt;body&gt;</code> 和所有段落 <code>&lt;p&gt;</code>。此外，<code>&lt;p&gt;</code> 还会设置等值一半行高的下边距（默认是10px）。</p>
+<p class="lead">写在规则前面的话——项目的可维护性第一。</p>
+<h3>内置Less</h3>
+<p>
+整个排版系统的单位尺度都取决于 <strong>variables.less</strong> 文件中的两个Less变量： <code>@baseFontSize</code> 和 <code>@baseLineHeight</code>。 前者决定全局的默认字体大小font-size，后者决定默认的行高line-height。我们利用这些变量，配合一些数学运算，就可以得到定义样式时所需的margins, paddings, line-heights等等。配置它们以使Bootstrap能自适应。</p>
+<h3>强调文本</h3>
+<dl class="dl-hor">
+	<dt><code>&lt;small&gt;</code></dt>
+	<dd>这意味着它不是强调的内容。</dd>
+	<dt><code>&lt;strong&gt;</code></dt>
+	<dd>使用加粗来强调文本，把文本标记为相比其他文本更为重要</dd>
+	<dt><code>&lt;b&gt;</code></dt>
+	<dd>强调</dd>
+	<dt><code>&lt;em&gt;</code></dt>
+	<dd>使用斜体来强调文本</dd>
+	<dt><code>&lt;i&gt;</code></dt>
+	<dd>主要用在语音和技术等方面</dd>
+</dl>
+
+<blockquote>
+<p>菩提本无树，明镜亦非台；本来无一物，何处惹尘埃。</p>
+</blockquote>
+<blockquote>
+<p>远看山有色，近听水无声。春去花还在，人来鸟不惊。</p>
+<small title="Someone famous in Source Title">王维 <cite title="Source Title">《画》</cite></small>
+</blockquote>
+<blockquote class="pull-right">
+<p>曾经沧海难为水，除却巫山不是云。取次花丛懒回顾，半缘修道半缘君。</p>
+<small title="Someone famous in Source Title">元稹 <cite title="Source Title">《离思五首》之四</cite></small>
+</blockquote>
+
+<ul>
+	<li>cnBootstrap是个好框架</li>
+	<li>jQuery很不错</li>
+	<li>Git是个好工具</li>
+	<li>为什么选择Git
+		<ul>
+			<li>更方便的 Merge</li>
+			<li>更方便的管理</li>
+			<li>更健壮的系统</li>
+			<li>对网络的依赖性更低</li>
+			<li>更少的“仓库污染”</li>
+		</ul>
+	</li>
+	<li>YUI是个好框架</li>
+	<li>artTemplate是个很好的JS模板</li>
+	<li>raphaeljs是个好框架</li>
+</ul>
+<ol>
+	<li>CSS规范-减少依赖，避免耦合</li>
+	<li>统一风格，让代码有规可循，保证团队协作效率</li>
+	<li>文件编码必须使用utf-8（无BOM）</li>
+	<li>文件一律通过 link 链入 (NOT @import)</li>
+	<li>当只是单个页面使用时，才写在 &lt;head&gt; 的 &lt;style&gt; 中</li>
+</ol>
+<ul class="unstyled">
+	<li>以动手实践为荣 , 以只看不练为耻;</li>
+	<li>以打印日志为荣 , 以单步跟踪为耻;</li>
+	<li>以空格缩进为荣 , 以制表缩进为耻;</li>
+	<li>以单元测试为荣 , 以人工测试为耻;
+		<ul>
+			<li>DreamWeaver很不错</li>
+			<li>Notepad++也很好用</li>
+			<li>配合Zen-Coding很爽</li>
+			<li>使用Sublime Text也不错</li>
+		</ul>
+	</li>
+	<li>以模块复用为荣 , 以复制粘贴为耻;</li>
+	<li>以多态应用为荣 , 以分支判断为耻;</li>
+	<li>以精简干练为荣 , 以冗余拖沓为耻;</li>
+	<li>以总结分享为荣 , 以跪求其解为耻;</li>
+</ul>
+
+<dl>
+	<dt title="Description list">描述列表</dt>
+	<dd title="A description list is perfect for defining terms.">适用于术语的定义/解释</dd>
+	<dt>计算机</dt>
+	<dd>用来计算的仪器 ... ...</dd>
+	<dt>显示器</dt>
+	<dd>以视觉方式显示信息的装置 ... ...</dd>
+</dl>
+<dl class="dl-hor">
+	<dt>描述列表</dt>
+	<dd>适用于术语的定义/解释</dd>
+	<dt>Coffee</dt>
+	<dd>Black hot drink</dd>
+	<dt>Milk</dt>
+	<dd>White cold drink</dd>
+</dl>
+
+<h2 id="section1">一、关于 TYPO.CSS</h2>
+<p><em>TYPO.CSS</em> 的目的是，在一致化浏览器排版效果的同时，构建最适合中文阅读的网页排版。</p>
+<h4>现状和如何去做：</h4>
+<p>排版是一个麻烦的问题，需要精心设计，而这个设计却是常被视觉设计师所忽略的。前端工程师更常看到这样的问题，但不便变更。因为在多个 OS 中的不同浏览器渲染不同，改动需要多的时间做回归测试，所以改变变得更困难。而像我们一般使用的 Yahoo、Eric Meyer 和 Alice base.css 中采用的 Reset 都没有很好地考虑中文排版。TYPO.CSS 要做的就是解决中文排版的问题。</p>
+<p><strong>TYPO.CSS 测试于如下平台：</strong></p>
+<table summary="TYPO.CSS 的测试平台列表">
+    <thead>
+        <tr>
+            <th>OS/浏览器</th>
+            <th>Firefox</th>
+            <th>Chrome</th>
+            <th>Safari</th>
+            <th>Opera</th>
+            <th>IE9</th>
+            <th>IE8</th>
+            <th>IE7</th>
+            <th>IE6</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Mac OS X</td>
+            <td>√</td>
+            <td>√</td>
+            <td>√</td>
+            <td>√</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Windows 7</td>
+            <td>√</td>
+            <td>√</td>
+            <td>√</td>
+            <td>√</td>
+            <td>√</td>
+            <td>√</td>
+            <td>√</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Windows XP</td>
+            <td>√</td>
+            <td>√</td>
+            <td>√</td>
+            <td>√</td>
+            <td>-</td>
+            <td>√</td>
+            <td>√</td>
+            <td>√</td>
+        </tr>
+        <tr>
+            <td>Ubuntu Linux</td>
+            <td>√</td>
+            <td>√</td>
+            <td>-</td>
+            <td>√</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+    </tbody>
+</table>
+
+<h4>中文排版的重点和难点</h4>
+<p>在中文排版中，HTML4 的很多标准在语义在都有照顾到。但从视觉效果上，却很难利用单独的 CSS 来实现，像<abbr title="在文字下多加一个点">着重号</abbr>。在 HTML 中，着重号标签（<code>&lt;u&gt;</code>）已经被放弃，而 HTML5 被<a href="http://html5doctor.com/u-element/">重新提起</a>。TYPO.CSS 也根据实际情况提供相应的方案。我们重要要注意的两点是：</p>
+<ol>
+    <li>语义：语义对应的用法和样式是否与中文排版一致</li>
+    <li>表现：在各浏览器中的字体、大小和缩放是否如排版预期</li>
+</ol>
+<p>对于这些，TYPO.CSS 排版项目的中文偏重注意点，都添加在附录中，详见：</p>
+<blockquote>
+    <b>附录一</b>：<a href="#appendix1">TYPO.CSS 排版偏重点</a>
+</blockquote>
+
+<p>目前仍处于 alpha 开发阶段，测试平台的覆盖，特别是在<abbr title="手机、平板电脑等移动平台">移动端</abbr>上还没有覆盖完主流平台，希望有能力的同学能加入测试行列，或者加入到 TYPO.CSS 的开发。加入方法：<a href="https://github.com/sofish/typo.css">参与 TYPO.CSS 开发</a>。</p>
+
+
+<pre>
+/* 标题应该更贴紧内容，并与其他块区分，margin 值要相应做优化 */
+h1,h2,h3,h4,h5,h6 {
+    line-height:1;font-family:Arial,sans-serif;margin:1.4em 0 0.8em;
+}
+h1{font-size:1.8em;}
+h2{font-size:1.6em;}
+h3{font-size:1.4em;}
+h4{font-size:1.2em;}
+h5,h6{font-size:1em;}
+
+/* 现代排版：保证块/段落之间的空白隔行 */
+.typo p, .typo pre, .typo ul, .typo ol, .typo dl, .typo form, .typo hr {
+    margin:1em 0 0.6em;
+}
+</pre>
+
+<h3 id="section3">三、附录</h3>
+
+<h5 id="appendix1">1、TYPO.CSS 排版偏重点</h5>
+<table summary="TYPO.CSS 排版偏重点">
+    <thead>
+        <tr>
+            <th>类型</th>
+            <th>语义</th>
+            <th>标签</th>
+            <th>注意点</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <th rowspan="15">基础标签</th>
+          <td>标题</td>
+          <td><code>h1</code> ～ <code>h6</code></td>
+          <td>全局不强制大小，<code>.typo</code> 中标题与其对应的内容应紧贴，并且有相应的大小设置</td>
+        </tr>
+        <tr>
+          <td>上、下标</td>
+          <td><code>sup</code>/<code>sub</code></td>
+          <td>保持与 MicroSoft Office Word 等程序的日常排版一致</td>
+        </tr>
+        <tr>
+          <td>引用</td>
+          <td><code>blockquote</code></td>
+          <td>显示/嵌套样式</td>
+        </tr>
+        <tr>
+          <td>缩写</td>
+          <td><code>abbr</code></td>
+          <td>是否都有下划线，鼠标 <code>hover</code> 是否为帮助手势</td>
+        </tr>
+        <tr>
+          <td>分割线</td>
+          <td><code>hr</code></td>
+          <td>显示的 <code>padding</code> 和 <code>margin</code>正确</td>
+        </tr>
+        <tr>
+          <td>列表</td>
+          <td><code>ul</code>/<code>ol</code>/<code>dl</code></td>
+          <td>在全局没有 <code>list-style</code>，在 .<code>typo</code> 中对齐正确</td>
+        </tr>
+        <tr>
+          <td>定义列表</td>
+          <td><code>dl</code></td>
+          <td>全局 <code>padding</code> 和 <code>margin</code>为0， .<code>typo</code> 中对齐正确</td>
+        </tr>
+        <tr>
+          <td>选项</td>
+          <td><code>input[type=radio[, checkbox]]</code></td>
+          <td>与其他 <code>form</code> 元素排版时是否居中</td>
+        </tr>
+        <tr>
+          <td>斜体</td>
+          <td><code>i</code></td>
+          <td>只设置一种斜体，让 <code>em</code> 和  <code>cite</code> 显示为正体</td>
+        </tr>
+        <tr>
+          <td>强调</td>
+          <td><code>em</code></td>
+          <td>在全局显示正体，在 <code>.typo</code> 中显示与 <code>b</code> 和 <code>strong</code> 的样式一致，为粗休</td>
+        </tr>
+        <tr>
+          <td>加强</td>
+          <td><code>strong/b</code></td>
+          <td>显示为粗体</td>
+        </tr>
+        <tr>
+          <td>标记</td>
+          <td><code>mark</code></td>
+          <td>类似荧光笔</td>
+        </tr>
+        <tr>
+          <td>印刷</td>
+          <td><code>small</code></td>
+          <td>保持为正确字体的 80% 大小，颜色设置为浅灰色</td>
+        </tr>
+        <tr>
+          <td>表格</td>
+          <td><code>table</code></td>
+          <td>全局不显示线条，在 <code>table</code> 中显示表格外框，并且表头有浅灰背景</td>
+        </tr>
+        <tr>
+            <td>代码</td>
+            <td><code>pre</code>/<code>code</code></td>
+            <td>字体使用 <code>courier</code> 系字体，保持与 <code>serif</code> 有比较一致的显示效果</td>
+        </tr>
+        <tr>
+          <th rowspan="5">特殊符号</th>
+          <td>着重号</td>
+          <td>在文字下加点（•）</td>
+          <td>在支持 <code>:after</code> 和 <code>:before</code> 的浏览器可以做渐进增强实现</td>
+        </tr>
+        <tr>
+          <td>专名号</td>
+          <td><u>林建锋</u></td>
+          <td>专名号，有下划线，使用 <code>u</code> 或都 <code>.typo-u</code> 类</td>
+        </tr>
+        <tr>
+          <td>破折号</td>
+          <td>——</td>
+          <td>保持一划，而非两划</td>
+        </tr>
+        <tr>
+          <td>人民币</td>
+          <td>&yen;</td>
+          <td>使用两平等线的符号，或者 HTML 实体符号 <code>&amp;yen;</code></td>
+        </tr>
+        <tr>
+          <td>删除符</td>
+          <td><del>已删除（deleted）</del></td>
+          <td>一致化各浏览器显示，中英混排正确</td>
+        </tr>
+        <tr>
+          <th rowspan="4">加强类</th>
+          <td>专名号</td>
+          <td><code>.typo-u</code></td>
+          <td>由于 <code>u</code> 被 HTML4 放弃，在向后兼容上推荐使用 <code><u type="typo-u" …</code></td>
+        </tr>
+        <tr>
+          <td>着重符</td>
+          <td><code>.typo-em</code></td>
+          <td>利用 <code>:after</code> 和 <code>:before</code> 实现着重符</td>
+        </tr>
+        <tr>
+          <td>首字下沉</td>
+          <td><code>.typo-first</code></td>
+          <td>特殊排版</td>
+        </tr>
+        <tr>
+            <td>清除浮动</td>
+            <td><code>.clearfix</code></td>
+            <td>与一般 CSS Reset 保持一对致 API</td>
+        </tr>
+        <tr>
+          <th rowspan="5">注意点</th>
+          <td colspan="3">（1）中英文混排行高/行距</td>
+        </tr>
+        <tr>
+          <td colspan="3">（2）上下标在 IE 中显示效果</td>
+        </tr>
+        <tr>
+          <td colspan="3">（3）块/段落分割空白是否符合设计原则</td>
+        </tr>
+        <tr>
+          <td colspan="3">（4）input 多余空间问题</td>
+        </tr>
+        <tr>
+            <td colspan="3">（5）默认字体色彩，目前采用 <code>#333</code> 在各种浏览显示比较好</td>
+        </tr>
+    </tbody>
+</table>
+
+</div> <!-- #wrapper -->
+<a href="https://github.com/sofish/typo.css" id="fork">
+    <img alt="Fork me on GitHub" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png">
+</a>
+</body>
+</html>

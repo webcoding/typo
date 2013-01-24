@@ -1,0 +1,14 @@
+- reset 与 noreset
+- 常用标签初始化
+- typo-first: 首字下沉实现
+- 全局与 `typo` 的完整 demo 示例  
+- 根据 `附录一` 做兼容性测试
+- IE 的 `sup` 和 `sub` 显示问题
+- radio / checkbox 居中测试
+- 常用组件融合（表格、表单、按钮等）
+- [兼容性解决方案整合](http://www.tcreator.info/cnBootstrap/cnDocs/solution.php)
+- input 多余空白增强类
+- 示例三
+- getting start 文档
+- 参与开发文档
+- moblie 平台的测试
